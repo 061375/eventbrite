@@ -3,9 +3,8 @@
   margin: 0;
   transition: all 0.5s ease-in;
   height: 0px;
-  overflow: hidden;
-  background-color: #EFF2F5; }
-  /* line 7, ../components/sass/style.scss */
+  overflow: hidden; }
+  /* line 6, ../components/sass/style.scss */
   #ticketmodal.open {
     height: inherit;
     padding: 10px; }
