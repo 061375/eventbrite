@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>My Fake Eventbrite Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_/css/style.css" />
+    <script type="text/javascript" src="_/components/jquery/jquery.js"></script>
+    <script type="text/javascript" src="_/js/eventbrite.min.js"></script>
+    <!--script type="text/javascript" src="_/components/js/_eb.js"></script-->
+    <style>
+	    /* this sytle sheet is just for this document */
+	    body {
+	    	font-family: Helvetica, Arial, sans-serif;
+	    }
+	    body > div {
+	    	background: #EFF2F5;
+	    	width: 70%;	
+	    	box-sizing: content-box;
+	    } 
+	    .container {
+	    	min-height: 150px;
+	    	clear: both;
+	    	padding: 0 3px 3px 0;
+	    }
+	    .container > img {
+	    	float: left;
+	    	margin: 2px 5px 2px 0;
+	    	width: initial;
+	    }
+	    .container > div {
+	    	float: left;
+	    }
+	    .container > button {
+	    	float: left;
+	    	clear: right;
+	    	margin: 6%;
+	    	background: #ececec;
+    		padding: 5px;
+	    }
+	    #ticketmodal {
+	    	background-image: url(_/assets/loading.gif);
+	    	background-repeat: no-repeat;
+    		background-position: center;
+	    }
+	    #ticketmodal.open {
+	    	width: 98%;
+	    }
+	    .preload {
+	    	opacity: 0;
+	    	height: 0px;
+	    }
+	    @media screen and (max-width: 1085px) {
+	    	.container > button {
+	    		margin: 7% 0;
+	    		font-size: 1.3em;
+	    	}	
+	    }
+	    @media screen and (max-width: 830px) {
+	    	body > div {
+	    		width: 100%;
+	    	}
+	    	.container > div {
+	    		width: 60%;
+	    	}		
+	    }
+	    @media screen and (max-width: 570px) {
+	    	.container > img {
+	    		width: 100%;
+	    	}
+	    	.container > button {
+	    		width: 100%;
+	    		margin: 0;
+	    	}	
+	    }
+	    @media screen and (max-width: 480px) {
+	    	body > div {
+	    		width: 100%;
+	    	}
+	    }
+    </style>
+    <script>
+	    window.onload = function() {
+			$(document).ready(function(){ 
+				Eb.init();
+			});
+		}
+	</script>
+</head>
+<body>
+	<img src="_/assets/loading.gif" class="preload" />
+	<div>
+		<div class="container">
+			<img src="http://placehold.it/150x150" /> 
+			<div>
+				<h2>My Fake Eventbrite Event</h2>
+				<p>This is fake text about this event that will be taking place on:</br />
+					M d, YYYY at h:00 AM/PM
+				</p>
+			</div>
+			<button class="eb_buytickets" data-eid="32832705506">Get Tickets</button>
+		</div> 
+		<div class="container">
+			<img src="http://placehold.it/150x150" /> 
+			<div>
+				<h2>My Fake Eventbrite Event</h2>
+				<p>This is fake text about this event that will be taking place on:</br />
+					M d, YYYY at h:00 AM/PM
+				</p>
+			</div>
+			<button class="eb_buytickets" data-eid="32832705506">Get Tickets</button>
+		</div>
+	</div>
+    <script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>
