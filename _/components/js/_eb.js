@@ -1,3 +1,4 @@
+
 /**
  * 
  * Eb
@@ -9,11 +10,11 @@
  *
  * @return {Object}
  * */
-var Eb = (function() {
+var Eb = (function() { 
 
     "use strict";
 
-    var options = {
+    var options = { 
 
     	// @param {String} true, false, mobile
     	scrollTop: true, 
@@ -28,21 +29,36 @@ var Eb = (function() {
      * @param {Object}
      * */
     var iframedefault = {
+        // @param {Number}
     	frameborder: 0,
+        // @param {String}
     	width: '100%',
+        // @param {Number}
     	vspace: 0,
+        // @param {Number}
     	hspace: 0,
+        // @param {Number}
     	marginheight: 5,
+        // @param {Number}
     	marginwidth: 5,
+        // @param {String}
     	scrolling: 'auto',
+        // @param {String}
     	allowtransparency: 'true',
+        // @param {Number}
     	height: 393,
+        // @param {Number}
     	heightmobile: 1100,
+        // @param {Object}
     	src: {
+            // @param {String}
     		url: '//eventbrite.com/tickets-external?',
+            // @param {Object}
     		query: {
+                // @param {String}
     			ref: 'etckt',
-    			eid: ''
+                // @param {Null}
+    			eid: null 
     		}
     	}
     }

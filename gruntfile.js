@@ -7,7 +7,7 @@ module.exports = function(grunt) {
           my_target: {
             files: {
                 '_/js/eventbrite.min.js':[
-                    // '_/components/jquery/jquery.js', // uncomment this to include jquery into the main file
+                    //'_/components/jquery/jquery.js', // uncomment this to include jquery into the main file
                     '_/components/js/*.js' 
                 ]
             }
