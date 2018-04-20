@@ -10,9 +10,11 @@ I was asked to add the ability to purchase Eventbrite tickets from a website usi
 
 #### Basic
 
-~~~~<link rel="stylesheet" href="_/css/style.css" />
+~~~~
+<link rel="stylesheet" href="_/css/style.css" />
 <script type="text/javascript" src="_/components/jquery/jquery.js"></script>
-<script type="text/javascript" src="_/components/js/_eb.js"></script>~~~~ 
+<script type="text/javascript" src="_/components/js/_eb.js"></script>
+~~~~ 
 
 #### Basic Minified
 
