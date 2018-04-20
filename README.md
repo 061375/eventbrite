@@ -63,6 +63,40 @@ I was asked to add the ability to purchase Eventbrite tickets from a website usi
 </script>
 ~~~~
 
+#### Calling the script with HTML only ( the script does need to be initialized with Javascript )
+
+~~~~
+<div id="eventbrite">
+   <div class="container">
+    	    <img src="http://placehold.it/150x150"> 
+	    <div>
+		<h2>My Fake Eventbrite Event</h2>
+		<p>This is fake text about this event that will be taking place on:<br>
+		    M d, YYYY at h:00 AM/PM
+		</p>
+	    </div>
+    	    <button class="eb_buytickets" data-eid="34580136118">Get Tickets</button>
+        </div> 
+	<div class="container">
+	    <img src="http://placehold.it/150x150"> 
+	    <div>
+		<h2>My Fake Eventbrite Event</h2>
+		<p>This is fake text about this event that will be taking place on:<br>
+		    M d, YYYY at h:00 AM/PM
+		</p>
+	    </div>
+	    <button class="eb_buytickets" data-eid="34580177241">Get Tickets</button>
+	</div>
+</div>
+<script>
+    window.onload = function() {
+		$(document).ready(function(){ 
+			Eb.init();
+		});
+	}
+</script>
+~~~~
+
 The script has 2 sets of argument lists. 
 
 1. Arguments for the script 
