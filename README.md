@@ -10,36 +10,43 @@ I was asked to add the ability to purchase Eventbrite tickets from a website usi
 
 #### Basic
 
-`<link rel="stylesheet" href="_/css/style.css" />
+~~~~<link rel="stylesheet" href="_/css/style.css" />
 <script type="text/javascript" src="_/components/jquery/jquery.js"></script>
-<script type="text/javascript" src="_/components/js/_eb.js"></script>` 
+<script type="text/javascript" src="_/components/js/_eb.js"></script>~~~~ 
 
 #### Basic Minified
 
-`<link rel="stylesheet" href="_/css/style.css" />
+~~~~
+<link rel="stylesheet" href="_/css/style.css" />
 <script type="text/javascript" src="_/components/jquery/jquery.js"></script>
-<script type="text/javascript" src="_/js/eventbrite.min.js"></script>`
+<script type="text/javascript" src="_/js/eventbrite.min.js"></script>
+~~~~
 
 #### Basic Minified with Jquery included
 
-`<link rel="stylesheet" href="_/css/style.css" />
-<script type="text/javascript" src="_/js/eventbrite.jquery.min.js"></script>`
+~~~~
+<link rel="stylesheet" href="_/css/style.css" />
+<script type="text/javascript" src="_/js/eventbrite.jquery.min.js"></script>
+~~~~
 
 ### Calling the script
 
 #### Basic 
 
-`<script>
+~~~~
+<script>
     window.onload = function() {
 		$(document).ready(function(){ 
 			Eb.init();
 		});
 	}
-</script>`
+</script>
+~~~~
 
 #### with example arguments
 
-`<script>
+~~~~
+<script>
     window.onload = function() {
 		$(document).ready(function(){ 
 			Eb.init({
@@ -51,7 +58,8 @@ I was asked to add the ability to purchase Eventbrite tickets from a website usi
 			});
 		});
 	}
-</script>`
+</script>
+~~~~
 
 The script has 2 sets of argument lists. 
 
