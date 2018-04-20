@@ -37,6 +37,22 @@ I was asked to add the ability to purchase Eventbrite tickets from a website usi
 	}
 </script>
 
+#### with example arguments
+
+<script>
+    window.onload = function() {
+		$(document).ready(function(){ 
+			Eb.init({
+				mobile_width:'320px'
+			},
+			{
+				width:'50%',
+				heightmobile:'250px'
+			});
+		});
+	}
+</script>
+
 The script has 2 sets of argument lists. 
 
 1. Arguments for the script 
